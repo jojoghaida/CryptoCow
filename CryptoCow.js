@@ -15,4 +15,7 @@ var line = two.makeLine(sH/2,0,sW,sH);
 line.linewidth = 3;
 line.stroke = "black";
 
+two.update();
+
+
 //

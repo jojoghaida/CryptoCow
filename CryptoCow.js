@@ -16,10 +16,10 @@ line.linewidth = 3;
 line.stroke = "black";
 
 var dateText = two.makeText(date,sW/2,sH/2+15);
-selectorText.fill = "black";
-selectorText.size = 12;
-selectorText.family = 'Karla';
-selectorText.value = date;
+dateText.fill = "black";
+dateText.size = 12;
+dateText.family = 'Karla';
+dateText.value = date;
 
 two.update();
 

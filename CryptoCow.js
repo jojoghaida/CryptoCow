@@ -25,6 +25,27 @@ dateText.size = 12;
 dateText.family = 'Karla';
 dateText.value = date;
 
+var colorStyle = "blue";
+var tickQuan = 150;
+var bigTick = 5;
+var tickSpan = 10;
+var leftWhiteSpace = 50;
+
+for(i=0;i<tickQuan;i++){
+  if(i/bigTick % 1 == 0){
+    tick = two.makeLine(i*tickSpan+leftWhiteSpace,sH,i*tickSpan+leftWhiteSpace,sH-15);
+    tick.stroke = colorStyle;
+    integer = two.makeText(i,i*tickSpan+leftWhiteSpace,sH-25);
+    integer.fill = colorStyle;
+    integer.family = 'Karla';
+    tickerGroup.push(tick,integer);
+  }else{
+    tick = two.makeLine(i*tickSpan+leftWhiteSpace,sH,i*tickSpan+leftWhiteSpace,sH-10);
+    tick.stroke = colorStyle;
+    tickerGroup.push(tick);
+  }
+}
+
 two.update();
 
 

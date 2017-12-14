@@ -27,9 +27,7 @@ two.update();
 
 
 function onWindowRotate() {
-  var sW = plotCanvas.offsetWidth
-  var sH = plotCanvas.offsetHeight
-  two.update();
+  location.reload();
 }
 
 //

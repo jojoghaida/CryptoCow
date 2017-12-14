@@ -7,12 +7,9 @@ console.log(date);
 var plotCanvas = document.getElementById('plotter');
 //offset height of toolbar and tabs menu!
 
-function setCanvas(){
-  var sW = plotCanvas.offsetWidth
-  var sH = plotCanvas.offsetHeight
-}
-setCanvas();
 
+var sW = plotCanvas.offsetWidth
+var sH = plotCanvas.offsetHeight
 var params = {width: sW, height: sH};
 var two = new Two(params).appendTo(plotCanvas);
 
@@ -30,7 +27,8 @@ two.update();
 
 
 function onWindowRotate() {
-  setCanvas();
+  var sW = plotCanvas.offsetWidth
+  var sH = plotCanvas.offsetHeight
   two.update();
 }
 

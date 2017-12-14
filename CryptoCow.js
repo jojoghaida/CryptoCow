@@ -30,6 +30,7 @@ var tickQuan = 150;
 var bigTick = 5;
 var tickSpan = 10;
 var leftWhiteSpace = 50;
+var tickerGroup = []
 
 for(i=0;i<tickQuan;i++){
   if(i/bigTick % 1 == 0){

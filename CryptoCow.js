@@ -15,7 +15,12 @@ var line = two.makeLine(0,sH/2,sW,sH/2);
 line.linewidth = 3;
 line.stroke = "black";
 
-two.update();
+var selectorText = two.makeText(date,sW/2,sH/2);
+selectorText.fill = "black";
+selectorText.size = 18;
+selectorText.family = 'Karla';
+selectorText.value = date;
 
+two.update();
 
 //

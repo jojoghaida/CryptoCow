@@ -11,7 +11,7 @@ var sH = plotCanvas.offsetHeight
 var params = {width: sW, height: sH};
 var two = new Two(params).appendTo(plotCanvas);
 
-var line = two.makeLine(0,sH-30,sW,sH/2);
+var line = two.makeLine(0,sH-30,sW,sH-30);
 line.linewidth = 3;
 line.stroke = "black";
 

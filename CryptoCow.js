@@ -11,11 +11,11 @@ var sH = plotCanvas.offsetHeight
 var params = {width: sW, height: sH};
 var two = new Two(params).appendTo(plotCanvas);
 
-var line = two.makeLine(0,sH/2,sW,sH/2);
+var line = two.makeLine(0,sH-30,sW,sH/2);
 line.linewidth = 3;
 line.stroke = "black";
 
-var dateText = two.makeText(date,sW/2,sH/2+15);
+var dateText = two.makeText(date,sW/2,sH-30+15);
 dateText.fill = "black";
 dateText.size = 12;
 dateText.family = 'Karla';

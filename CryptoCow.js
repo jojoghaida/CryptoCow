@@ -3,8 +3,8 @@
 var date = new Date();
 var day = date.getDate();
 var month = date.getMonth()+1;
-var year = date.getYear();
-console.log(day,"/",month,"/",year);
+var year = date.getFullYear().toString().substr(-2);
+console.log(day+"/"+month+"/"+year);
 
 
 var plotCanvas = document.getElementById('plotter');

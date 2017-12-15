@@ -2,7 +2,9 @@
 
 var date = new Date();
 var day = date.getDate();
-console.log(day);
+var month = date.getMonth()+1;
+var year = date.getYear();
+console.log(day,"/",month,"/",year);
 
 
 var plotCanvas = document.getElementById('plotter');

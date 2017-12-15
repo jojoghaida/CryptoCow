@@ -1,7 +1,8 @@
 //Crypto Cow
 
 var date = new Date();
-console.log(date);
+var day = date.getDate();
+console.log(day);
 
 
 var plotCanvas = document.getElementById('plotter');
@@ -25,7 +26,7 @@ dateText.size = 12;
 dateText.family = 'Karla';
 dateText.value = date;
 
-var colorStyle = "blue";
+var colorStyle = "black";
 var tickQuan = 150;
 var bigTick = 5;
 var tickSpan = 10;

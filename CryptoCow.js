@@ -16,7 +16,7 @@ var sH = plotCanvas.offsetHeight
 var params = {width: sW, height: sH};
 var two = new Two(params).appendTo(plotCanvas);
 
-var graphOffsetHeight = 100;
+var graphOffsetHeight = 120;
 
 var plotLine = two.makeLine(0,sH-graphOffsetHeight,sW,sH-graphOffsetHeight);
 plotLine.linewidth = 2;
@@ -32,7 +32,7 @@ var colorStyle = "black";
 var tickQuan = 150;
 var bigTick = 5;
 var tickSpan = -10;
-var rightOffset = sW-40;
+var rightOffset = sW-60;
 var tickerGroup = []
 
 for(i=0;i<tickQuan;i++){

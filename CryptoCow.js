@@ -22,7 +22,7 @@ var plotLine = two.makeLine(0,sH-graphOffsetHeight,sW,sH-graphOffsetHeight);
 plotLine.linewidth = 2;
 plotLine.stroke = "black";
 
-var zoom = two.makeText("zoom",sW/2,sH + 70 - graphOffsetHeight);
+var zoom = two.makeText("zoom",sW/2,sH + 75 - graphOffsetHeight);
 zoom.fill = "black";
 zoom.size = 30;
 zoom.family = 'Karla';

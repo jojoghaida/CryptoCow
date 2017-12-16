@@ -83,13 +83,13 @@ cashLine.stroke = "v_colorStyle";
 
 //cashline
 
-var h_origin = two.makeLine(rightOffset-10,sH-graphOffsetHeight,rightOffset+10,sH-graphOffsetHeight);
-h_origin.stroke = "red";
-h_origin.linewidth = 3;
-
-var v_origin = two.makeLine(rightOffset,sH-graphOffsetHeight+10,rightOffset,sH-graphOffsetHeight-10);
-v_origin.stroke = "red";
-v_origin.linewidth = 3;
+// var h_origin = two.makeLine(rightOffset-10,sH-graphOffsetHeight,rightOffset+10,sH-graphOffsetHeight);
+// h_origin.stroke = "red";
+// h_origin.linewidth = 3;
+//
+// var v_origin = two.makeLine(rightOffset,sH-graphOffsetHeight+10,rightOffset,sH-graphOffsetHeight-10);
+// v_origin.stroke = "red";
+// v_origin.linewidth = 3;
 
 var origin = two.makeCircle(rightOffset,sH-graphOffsetHeight,5);
 origin.stroke = "red";

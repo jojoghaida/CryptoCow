@@ -54,7 +54,7 @@ for(i=0;i<h_tickQuan;i++){
 //horizontal ticker
 
 //vertical ticker
-// var v_colorStyle = "black";
+var v_colorStyle = "black";
 // var v_tickQuan = 150;
 // var v_bigTick = 5;
 // var v_tickSpan = -10;

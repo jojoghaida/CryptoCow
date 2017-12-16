@@ -85,6 +85,10 @@ var v_origin = two.makeLine(rightOffset,sH-graphOffsetHeight+10,rightOffset,sH-g
 v_origin.stroke = "red";
 v_origin.linewidth = 3;
 
+var origin = two.makeCircle(rightOffset,sH-graphOffsetHeight,5);
+origin.stroke = "red";
+origin.fill = "red";
+
 two.update();
 
 

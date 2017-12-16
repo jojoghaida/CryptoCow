@@ -28,27 +28,62 @@ zoom.size = 30;
 zoom.family = 'Karla';
 zoom.value = "-    zoom    +";
 
-var colorStyle = "black";
-var tickQuan = 150;
-var bigTick = 5;
-var tickSpan = -10;
-var rightOffset = sW-60;
-var tickerGroup = []
 
-for(i=0;i<tickQuan;i++){
-  if(i/bigTick % 1 == 0){
-    tick = two.makeLine(i*tickSpan+rightOffset,sH-graphOffsetHeight,i*tickSpan+rightOffset,sH+15-graphOffsetHeight);
-    tick.stroke = colorStyle;
-    integer = two.makeText(today,i*tickSpan+rightOffset,sH+25-graphOffsetHeight);
-    integer.fill = colorStyle;
+//horizontal ticker
+var h_colorStyle = "black";
+var h_tickQuan = 150;
+var h_bigTick = 5;
+var h_tickSpan = -10;
+var rightOffset = sW-60;
+var h_tickerGroup = []
+
+for(i=0;i<h_tickQuan;i++){
+  if(i/h_bigTick % 1 == 0){
+    tick = two.makeLine(i*h_tickSpan+rightOffset,sH-graphOffsetHeight,i*h_tickSpan+rightOffset,sH+15-graphOffsetHeight);
+    tick.stroke = h_colorStyle;
+    integer = two.makeText(today,i*h_tickSpan+rightOffset,sH+25-graphOffsetHeight);
+    integer.fill = h_colorStyle;
     integer.family = 'Karla';
-    tickerGroup.push(tick,integer);
+    h_tickerGroup.push(tick,integer);
   }else{
-    tick = two.makeLine(i*tickSpan+rightOffset,sH-graphOffsetHeight,i*tickSpan+rightOffset,sH+10-graphOffsetHeight);
-    tick.stroke = colorStyle;
-    tickerGroup.push(tick);
+    tick = two.makeLine(i*h_tickSpan+rightOffset,sH-graphOffsetHeight,i*h_tickSpan+rightOffset,sH+10-graphOffsetHeight);
+    tick.stroke = h_colorStyle;
+    h_tickerGroup.push(tick);
   }
 }
+//horizontal ticker
+
+//vertical ticker
+// var v_colorStyle = "black";
+// var v_tickQuan = 150;
+// var v_bigTick = 5;
+// var v_tickSpan = -10;
+// var rightOffset = sW-60;
+// var v_tickerGroup = []
+//
+// for(i=0;i<v_tickQuan;i++){
+//   if(i/v_bigTick % 1 == 0){
+//     tick = two.makeLine(i*v_tickSpan+rightOffset,sH-graphOffsetHeight,i*v_tickSpan+rightOffset,sH+15-graphOffsetHeight);
+//     tick.stroke = v_colorStyle;
+//     integer = two.makeText(today,i*v_tickSpan+rightOffset,sH+25-graphOffsetHeight);
+//     integer.fill = v_colorStyle;
+//     integer.family = 'Karla';
+//     v_tickerGroup.push(tick,integer);
+//   }else{
+//     tick = two.makeLine(i*v_tickSpan+rightOffset,sH-graphOffsetHeight,i*v_tickSpan+rightOffset,sH+10-graphOffsetHeight);
+//     tick.stroke = v_colorStyle;
+//     v_tickerGroup.push(tick);
+//   }
+// }
+//vertical ticker
+
+var h_origin = two.makeLine(rightOffset-10,graphOffsetHeight,rightOffset+10,graphOffsetHeight);
+h_origin.stroke = "red";
+h_origin.linewidth = 2;
+
+var v_origin = two.makeLine(rightOffset,graphOffsetHeight+10,rightOffset,graphOffsetHeight-10);
+v_origin.stroke = "red";
+v_origin.linewidth = 2;
 
 two.update();
 

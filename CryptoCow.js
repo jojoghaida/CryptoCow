@@ -18,11 +18,11 @@ var two = new Two(params).appendTo(plotCanvas);
 
 var graphOffsetHeight = 65;
 
-var plotLine = two.makeLine(0,sH-30-graphOffsetHeight,sW,sH-30-graphOffsetHeight);
+var plotLine = two.makeLine(0,sH-graphOffsetHeight,sW,sH-graphOffsetHeight);
 plotLine.linewidth = 2;
 plotLine.stroke = "black";
 
-var dateText = two.makeText(today,sW/2,sH-30+15-graphOffsetHeight);
+var dateText = two.makeText(today,sW/2,sH+15-graphOffsetHeight);
 dateText.fill = "black";
 dateText.size = 12;
 dateText.family = 'Karla';

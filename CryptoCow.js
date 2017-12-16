@@ -77,6 +77,12 @@ for(i=0;i<h_tickQuan;i++){
 // }
 //vertical ticker
 
+//cashline
+var cashLine = two.makeLine(rightOffset,0,rightOffset,sH-graphOffsetHeight);
+cashLine.stroke = "v_colorStyle";
+
+//cashline
+
 var h_origin = two.makeLine(rightOffset-10,sH-graphOffsetHeight,rightOffset+10,sH-graphOffsetHeight);
 h_origin.stroke = "red";
 h_origin.linewidth = 3;

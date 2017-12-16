@@ -78,7 +78,7 @@ var v_colorStyle = "black";
 //vertical ticker
 
 //cashline
-var cashLine = two.makeLine(rightOffset,10,rightOffset,sH-graphOffsetHeight);
+var cashLine = two.makeLine(0,10,rightOffset,sH-graphOffsetHeight);
 cashLine.stroke = "v_colorStyle";
 
 //cashline

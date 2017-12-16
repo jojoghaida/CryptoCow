@@ -18,9 +18,9 @@ var two = new Two(params).appendTo(plotCanvas);
 
 var graphOffsetHeight = 65;
 
-var line = two.makeLine(0,sH-30-graphOffsetHeight,sW,sH-30-graphOffsetHeight);
-line.linewidth = 2;
-line.stroke = "black";
+var plotLine = two.makeLine(0,sH-30-graphOffsetHeight,sW,sH-30-graphOffsetHeight);
+plotLine.linewidth = 2;
+plotLine.stroke = "black";
 
 var dateText = two.makeText(today,sW/2,sH-30+15-graphOffsetHeight);
 dateText.fill = "black";
@@ -37,14 +37,14 @@ var tickerGroup = []
 
 for(i=0;i<tickQuan;i++){
   if(i/bigTick % 1 == 0){
-    tick = two.makeLine(i*tickSpan+leftWhiteSpace,sH,i*tickSpan+leftWhiteSpace,sH-15);
+    tick = two.makeLine(i*tickSpan+leftWhiteSpace,sH-graphOffsetHeight,i*tickSpan+leftWhiteSpace,sH-15-graphOffsetHeight);
     tick.stroke = colorStyle;
-    integer = two.makeText(i,i*tickSpan+leftWhiteSpace,sH-25);
+    integer = two.makeText(i,i*tickSpan+leftWhiteSpace,sH-25-graphOffsetHeight);
     integer.fill = colorStyle;
     integer.family = 'Karla';
     tickerGroup.push(tick,integer);
   }else{
-    tick = two.makeLine(i*tickSpan+leftWhiteSpace,sH,i*tickSpan+leftWhiteSpace,sH-10);
+    tick = two.makeLine(i*tickSpan+leftWhiteSpace,sH-graphOffsetHeight,i*tickSpan+leftWhiteSpace,sH-10-graphOffsetHeight);
     tick.stroke = colorStyle;
     tickerGroup.push(tick);
   }

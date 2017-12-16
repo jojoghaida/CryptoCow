@@ -31,8 +31,8 @@ plotLine.stroke = "black";
 var colorStyle = "black";
 var tickQuan = 150;
 var bigTick = 5;
-var tickSpan = 10;
-var rightOffset = sW-80;
+var tickSpan = -10;
+var rightOffset = sW-40;
 var tickerGroup = []
 
 for(i=0;i<tickQuan;i++){

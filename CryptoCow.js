@@ -39,7 +39,7 @@ for(i=0;i<tickQuan;i++){
   if(i/bigTick % 1 == 0){
     tick = two.makeLine(i*tickSpan+rightOffset,sH-graphOffsetHeight,i*tickSpan+rightOffset,sH+15-graphOffsetHeight);
     tick.stroke = colorStyle;
-    integer = two.makeText(i,i*tickSpan+rightOffset,sH+25-graphOffsetHeight);
+    integer = two.makeText(today,i*tickSpan+rightOffset,sH+25-graphOffsetHeight);
     integer.fill = colorStyle;
     integer.family = 'Karla';
     tickerGroup.push(tick,integer);

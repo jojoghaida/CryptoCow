@@ -22,11 +22,11 @@ var plotLine = two.makeLine(0,sH-graphOffsetHeight,sW,sH-graphOffsetHeight);
 plotLine.linewidth = 2;
 plotLine.stroke = "black";
 
-// var dateText = two.makeText(today,sW/2,sH+15-graphOffsetHeight);
-// dateText.fill = "black";
-// dateText.size = 12;
-// dateText.family = 'Karla';
-// dateText.value = date;
+var zoom = two.makeText("zoom",sW/2,sH+15-graphOffsetHeight);
+zoom.fill = "black";
+zoom.size = 12;
+zoom.family = 'Karla';
+zoom.value = "zoom";
 
 var colorStyle = "black";
 var tickQuan = 150;

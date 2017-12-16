@@ -79,11 +79,11 @@ for(i=0;i<h_tickQuan;i++){
 
 var h_origin = two.makeLine(rightOffset-10,sH-graphOffsetHeight,rightOffset+10,sH-graphOffsetHeight);
 h_origin.stroke = "red";
-h_origin.linewidth = 2;
+h_origin.linewidth = 3;
 
 var v_origin = two.makeLine(rightOffset,sH-graphOffsetHeight+10,rightOffset,sH-graphOffsetHeight-10);
 v_origin.stroke = "red";
-v_origin.linewidth = 2;
+v_origin.linewidth = 3;
 
 two.update();
 

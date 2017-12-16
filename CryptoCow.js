@@ -77,11 +77,11 @@ for(i=0;i<h_tickQuan;i++){
 // }
 //vertical ticker
 
-var h_origin = two.makeLine(rightOffset-10,graphOffsetHeight,rightOffset+10,graphOffsetHeight);
+var h_origin = two.makeLine(rightOffset-10,sH-graphOffsetHeight,rightOffset+10,sH-graphOffsetHeight);
 h_origin.stroke = "red";
 h_origin.linewidth = 2;
 
-var v_origin = two.makeLine(rightOffset,graphOffsetHeight+10,rightOffset,graphOffsetHeight-10);
+var v_origin = two.makeLine(rightOffset,sH-graphOffsetHeight+10,rightOffset,sH-graphOffsetHeight-10);
 v_origin.stroke = "red";
 v_origin.linewidth = 2;
 

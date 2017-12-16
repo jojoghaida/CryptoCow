@@ -16,7 +16,7 @@ var sH = plotCanvas.offsetHeight
 var params = {width: sW, height: sH};
 var two = new Two(params).appendTo(plotCanvas);
 
-var graphOffsetHeight = 80;
+var graphOffsetHeight = 100;
 
 var plotLine = two.makeLine(0,sH-graphOffsetHeight,sW,sH-graphOffsetHeight);
 plotLine.linewidth = 2;

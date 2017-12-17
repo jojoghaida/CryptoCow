@@ -20,17 +20,17 @@ var graphOffsetHeight = 120;
 
 var plotLine = two.makeLine(0,sH-graphOffsetHeight,sW,sH-graphOffsetHeight);
 plotLine.linewidth = 2;
-plotLine.stroke = "black";
+plotLine.stroke = "white";
 
 var zoom = two.makeText("-    zoom    +",sW/2,sH + 75 - graphOffsetHeight);
-zoom.fill = "black";
+zoom.fill = "white";
 zoom.size = 30;
 zoom.family = 'Karla';
 zoom.value = "-    zoom    +";
 
 
 //horizontal ticker
-var h_colorStyle = "black";
+var h_colorStyle = "white";
 var h_tickQuan = 150;
 var h_bigTick = 5;
 var h_tickSpan = -10;
@@ -54,7 +54,7 @@ for(i=0;i<h_tickQuan;i++){
 //horizontal ticker
 
 //vertical ticker
-var v_colorStyle = "black";
+var v_colorStyle = "white";
 // var v_tickQuan = 150;
 // var v_bigTick = 5;
 // var v_tickSpan = -10;

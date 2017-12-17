@@ -79,7 +79,7 @@ var v_colorStyle = "white";
 
 //cashline
 var cashLine = two.makeLine(rightOffset,0,rightOffset,sH-graphOffsetHeight);
-cashLine.stroke = v_colorStyle;
+cashLine.stroke = "yellow";
 
 //cashline
 
@@ -91,9 +91,9 @@ cashLine.stroke = v_colorStyle;
 // v_origin.stroke = "red";
 // v_origin.linewidth = 3;
 
-var origin = two.makeCircle(rightOffset,sH-graphOffsetHeight,5);
-origin.stroke = "red";
-origin.fill = "red";
+var endOrigin = two.makeCircle(rightOffset,sH-graphOffsetHeight,5);
+endOrigin.stroke = "red";
+endOrigin.fill = "red";
 
 two.update();
 

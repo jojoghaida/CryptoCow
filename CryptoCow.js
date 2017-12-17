@@ -53,6 +53,12 @@ for(i=0;i<h_tickQuan;i++){
 }
 //horizontal ticker
 
+//LTC line
+var ltcP = two.makeLine(0,sH-graphOffsetHeight,rightOffset,sH-graphOffsetHeight-30);
+ltcP.stroke = "grey";
+
+//LTC line
+
 //vertical ticker
 var v_colorStyle = "white";
 // var v_tickQuan = 150;

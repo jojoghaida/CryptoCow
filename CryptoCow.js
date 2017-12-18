@@ -63,7 +63,7 @@ ltcPts.push(a,b,c,d);
 
 var ltcPath = two.makePath(ltcPts);
 
-var clrStop1 = new Two.Stop(.7,'white',0);
+var clrStop1 = new Two.Stop(.4,'white',0);
 var clrStop2 = new Two.Stop(1,'grey',.75);
 var ltcGradient = two.makeLinearGradient(sW,sH-graphOffsetHeight,sW,0,clrStop1,clrStop2);
 ltcPath.linewidth = 2;

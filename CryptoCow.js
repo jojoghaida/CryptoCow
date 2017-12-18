@@ -56,10 +56,11 @@ for(i=0;i<h_tickQuan;i++){
 //LTC line
 var ltcPts = [];
 var a = new Two.Anchor(0,sH-graphOffsetHeight);
-var b = new Two.Anchor(150,70);
-var c = new Two.Anchor(rightOffset,sH-graphOffsetHeight-100);
-var d = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
-ltcPts.push(a,b,c,d);
+var b = new Two.Anchor(150,400);
+var c = new Two.Anchor(300,800);
+var d = new Two.Anchor(rightOffset,sH-graphOffsetHeight-100);
+var e = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
+ltcPts.push(a,b,c,d,e);
 
 var ltcPath = two.makePath(ltcPts);
 

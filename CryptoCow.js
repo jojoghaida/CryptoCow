@@ -56,8 +56,9 @@ for(i=0;i<h_tickQuan;i++){
 //LTC line
 var a = new Two.Anchor(0,sH-graphOffsetHeight);
 var b = new Two.Anchor(rightOffset,sH-graphOffsetHeight-300);
-var ltcP = two.makePath([a,b]);
-ltcP.stroke = "grey";
+var ltcPts = new Two.Group();
+var ltcPath = two.makePath([a,b]);
+ltcPath.stroke = "grey";
 
 //LTC line
 

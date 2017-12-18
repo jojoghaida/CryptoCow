@@ -60,7 +60,12 @@ var b = new Two.Anchor(150,sH-graphOffsetHeight-200);
 var c = new Two.Anchor(rightOffset,sH-graphOffsetHeight-100);
 var d = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
 ltcPts.push(a,b,c,d);
+
 var ltcPath = two.makePath(ltcPts);
+
+var clrStop1 = new Two.Stop(.9,'grey',0);
+var clrStop2 = new Two.Stop(1,'blue',1);
+var ltcGradient = two.makeLinearGradient(sW,sH-graphOffsetHeight,sW,sH,clrStop1,clrStop2);
 ltcPath.linewidth = 2;
 ltcPath.stroke = "grey";
 // ltcPath.fill = "purple";

@@ -68,7 +68,7 @@ var clrStop2 = new Two.Stop(1,'blue',1);
 var ltcGradient = two.makeLinearGradient(sW,sH-graphOffsetHeight,sW,sH,clrStop1,clrStop2);
 ltcPath.linewidth = 2;
 ltcPath.stroke = "grey";
-// ltcPath.fill = "purple";
+ltcPath.fill = ltcGradient;
 
 //LTC line
 

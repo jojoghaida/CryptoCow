@@ -58,7 +58,7 @@ var ltcPts = [];
 var a = new Two.Anchor(0,sH-graphOffsetHeight);
 var b = new Two.Anchor(70,100);
 var c = new Two.Anchor(220,250);
-var d = new Two.Anchor(rightOffset,sH-graphOffsetHeight-100);
+var d = new Two.Anchor(rightOffset,sH-graphOffsetHeight-250);
 var e = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
 ltcPts.push(a,b,c,d,e);
 

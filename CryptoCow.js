@@ -54,10 +54,11 @@ for(i=0;i<h_tickQuan;i++){
 //horizontal ticker
 
 //LTC line
+var ltcPts = [];
 var a = new Two.Anchor(0,sH-graphOffsetHeight);
 var b = new Two.Anchor(rightOffset,sH-graphOffsetHeight-300);
 var c = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
-var ltcPts = new Two.Group(a,b,c);
+ltcPts.push(a,b,c);
 var ltcPath = two.makePath(ltcPts);
 ltcPath.stroke = "grey";
 

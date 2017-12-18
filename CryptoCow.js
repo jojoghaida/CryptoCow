@@ -60,6 +60,7 @@ var b = new Two.Anchor(rightOffset,sH-graphOffsetHeight-300);
 var c = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
 ltcPts.push(a,b,c);
 var ltcPath = two.makePath(ltcPts);
+ltcPath.linewidth = 2;
 ltcPath.stroke = "grey";
 ltcPath.fill = "purple";
 

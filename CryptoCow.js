@@ -61,6 +61,7 @@ var c = new Two.Anchor(rightOffset,sH-graphOffsetHeight);
 ltcPts.push(a,b,c);
 var ltcPath = two.makePath(ltcPts);
 ltcPath.stroke = "grey";
+ltcPath.fill = "purple";
 
 //LTC line
 

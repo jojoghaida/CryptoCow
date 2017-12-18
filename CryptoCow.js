@@ -54,7 +54,7 @@ for(i=0;i<h_tickQuan;i++){
 //horizontal ticker
 
 //LTC line
-var a = two.makeAnchor(0,sH-graphOffsetHeight);
+var a = new Two.Anchor(0,sH-graphOffsetHeight);
 var ltcP = two.makePath(0,sH-graphOffsetHeight,rightOffset,sH-graphOffsetHeight-300);
 ltcP.stroke = "grey";
 

@@ -93,6 +93,7 @@ var v_colorStyle = "white";
 
 //cashline
 var cashLine = two.makeLine(rightOffset,0,rightOffset,sH-graphOffsetHeight);
+cashLine.linewidth = 3;
 cashLine.stroke = "red";
 
 //cashline

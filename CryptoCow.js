@@ -34,7 +34,7 @@ var h_colorStyle = "white";
 var h_tickQuan = 150;
 var h_bigTick = 5;
 var h_tickSpan = -10;
-var rightOffset = sW-60;
+var rightOffset = sW;
 var h_tickerGroup = []
 
 for(i=0;i<h_tickQuan;i++){
@@ -99,8 +99,8 @@ var v_colorStyle = "white";
 
 //cashline
 var cashLine = two.makeLine(rightOffset,0,rightOffset,sH-graphOffsetHeight);
-cashLine.linewidth = 3;
-cashLine.stroke = "red";
+cashLine.linewidth = 2;
+cashLine.stroke = "orange";
 
 //cashline
 
@@ -113,8 +113,8 @@ cashLine.stroke = "red";
 // v_origin.linewidth = 3;
 
 var endOrigin = two.makeCircle(rightOffset,sH-graphOffsetHeight,5);
-endOrigin.stroke = "red";
-endOrigin.fill = "red";
+endOrigin.stroke = "orange";
+endOrigin.fill = "orange";
 
 two.update();
 

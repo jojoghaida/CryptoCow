@@ -1,11 +1,9 @@
 //0peration Crypto-Slut
 
-// BTC/USD
+var Gdax = require('gdax');
+var publicClient = new Gdax.PublicClient();
 
-//ETH/USD
-
-//LTC/USD
-
-//Markets
-
-console.log("hi");
+// var callback = function(err, response, data) {
+//   // your code here.
+// };
+//<<<standard callback
